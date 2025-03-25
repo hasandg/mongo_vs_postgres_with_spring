@@ -1,0 +1,24 @@
+server:
+  port: 8070
+
+spring:
+  application:
+    name: performance-automated-client
+  datasource:
+    url: jdbc:h2:file:./test-results
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled:true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    com.example.performance.automated: DEBUG
+    org.springframework.web: INFO 

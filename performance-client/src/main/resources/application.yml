@@ -1,0 +1,11 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: performance-client
+
+logging:
+  level:
+    com.example.performance.client: DEBUG
+    org.springframework.web: INFO 
