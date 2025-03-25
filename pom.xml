@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
     
-    <groupId>com.example</groupId>
+    <groupId>com.hasandag</groupId>
     <artifactId>mongo-vs-postgres-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -19,6 +19,7 @@
     <modules>
         <module>performance-client</module>
         <module>performance-automated-client</module>
+        <module>mongo_vs_postgres_server</module>
     </modules>
     
     <name>mongo-vs-postgres</name>
