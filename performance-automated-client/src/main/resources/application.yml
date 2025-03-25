@@ -1,5 +1,7 @@
 server:
-  port: 8070
+  port: 8085
+  servlet:
+    context-path: /
 
 spring:
   application:
@@ -11,7 +13,7 @@ spring:
     driver-class-name: org.h2.Driver
   h2:
     console:
-      enabled:true
+      enabled: true
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
@@ -20,5 +22,5 @@ spring:
 
 logging:
   level:
-    com.example.performance.automated: DEBUG
+    com.hasandag.performance.automated: DEBUG
     org.springframework.web: INFO 

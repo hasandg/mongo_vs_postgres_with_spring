@@ -11,7 +11,7 @@ import java.util.Map;
 
 @Slf4j
 @RestController
-@RequestMapping("/automated/api")
+@RequestMapping("/api")
 public class AutomatedTestController {
     private final AutomatedTestService automatedTestService;
 
@@ -68,6 +68,12 @@ public class AutomatedTestController {
         log.info("Exporting all metrics to files...");
         automatedTestService.exportAllMetrics();
         return ResponseEntity.ok("Metrics exported successfully to the 'metrics-export' directory");
+    }
+    
+    @GetMapping("/health")
+    public ResponseEntity<String> health() {
+        log.info("Health check endpoint called");
+        return ResponseEntity.ok("Application is running");
     }
     
     private double calculatePercentageDifference(long time1, long time2) {

@@ -39,3 +39,8 @@ build/
 **/volumes/
 /docker-data/
 /logs/
+
+*test-results.mv.db
+*test-results.trace.db
+**/metrics-export/
+
